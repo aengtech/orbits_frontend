@@ -5,8 +5,58 @@ body{
 }
 
 h1, h2, h3{
-    font-weight: 600;
+    font-weight: 600; 
 }
+
+img.orbitssmall {
+    max-width: 150px;
+    position: relative;
+    top: 0px;
+}
+
+.headlogo h3 {
+    color: #b0bec5;
+    position: relative;
+    bottom: 20px;
+    left: 8px;
+    bottom: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 400%;
+    float: left;
+}
+
+.menu.blue-grey-text.text-darken-2 {
+    position: relative;
+    left: 50%;
+}
+
+div.headlogo.blue-grey{
+    overflow: hidden;
+}
+
+.headlogo.blue-grey.lighten-5 {
+    height: 111px;
+}
+
+div .comparer{
+    position: absolute;
+    top: 60px;
+    left: 16px;
+}
+
+
+.col .search{
+    position: absolute;
+    left: 25%;
+    width: 60%;
+}
+
+.card .card-content {
+    padding: 15px;
+}
+
+
 .tabs .indicator {
     background-color: #43444b54;
     color: indigo;
@@ -19,17 +69,19 @@ h1, h2, h3{
 }
 
 .paginationBttns { 
-    width: 80%; 
-    height: 40px; 
+    width: 100%; 
+    height: 20px; 
+    margin: 20px;
     list-style: none; 
     display: flex; 
     justify-content: center;} 
 .paginationBttns a { 
-    padding: 10px; 
-    margin: 8px; 
+    padding: 6px; 
+    margin: 6px; 
     border-radius: 5px; 
     border: 1px solid#292b35; 
-    color: #383b46; cursor: pointer;} 
+    color: #383b46; 
+    cursor: pointer;} 
 .paginationBttns a:hover { 
     color: #292b35; 
     background-color: #b8c5f1;} 
@@ -49,12 +101,15 @@ h1, h2, h3{
     height: 400px;
 }
 
-img {
-    width: 50px; 
+img.socials {
+    width: 36px; 
 }
+
+
 
 ul.specialties{
     display: inline-flex;
+    max-height: 300px;
 }
 
 .profprops{
@@ -68,19 +123,25 @@ sup {
 
 img.brandlogos{
     width: 100%;
-    max-height: 200px;
+    max-height: 150px;
 }
 
 img.profile{
     width: 100%;
 }
 
+img.orbF{
+    max-height: 250px;
+    position: relative;
+    left: -40px;
+}
+
 .row .footpng.col.s6 {
-    height: 300px;
+    max-height: 150px;
 }
 
 .profile.col.l5.m5 {
-    height: 300px;
+    max-height: 300px;
     background: rgb(91,91,91);
     background: linear-gradient(70deg, rgba(91,91,91,0.9637758062126931) 0%, rgba(112,112,112,1) 44%, rgba(25,25,25,0.9469218736284235) 100%);
 }

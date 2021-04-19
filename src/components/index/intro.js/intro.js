@@ -41,7 +41,7 @@ const Intro = () => {
               </div>
               <div className="card-content">
                 <h5 className="card-title "> Plug-in Hybrid Electric</h5>
-                <p className="grey-text text-darken-2">P.H.E Vehicles use a combination of gas and electric to increase fuel economy, just like a standard hybrid. However, PHEV give you an all-electric option. </p>
+                <p className="grey-text text-darken-2">P.H.E Vehicles use a combination of gas and electric to increase fuel economy, just like a standard hybrid. PHEV gives you an all-electric option. </p>
               </div>
             </div>
           </div>

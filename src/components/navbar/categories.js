@@ -17,7 +17,7 @@ const Categories = () => {
       <ul className="categories">
         { uniqueBrands.map((uniqueBrand) => {
           return (
-            <li key="key"><Link to={`/brands/${uniqueBrand}`}><h6> {uniqueBrand} </h6></Link></li>)
+            <li key={uniqueBrand}><Link to={`/brands/${uniqueBrand}`}><h6> {uniqueBrand} </h6></Link></li>)
         })}
         </ul>
       </section>

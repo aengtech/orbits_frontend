@@ -23,6 +23,10 @@ import CarTips from'./components/index/carTips';
 import Tipper from './components/index/details/tipper';
 import Models from './components/navbar/models';
 
+import BuyCar from './components/navbar/navlinks/buycar';
+import TradeCar from './components/navbar/navlinks/tradecar';
+import Admin from './components/admin/admin';
+
 const App = () => {
     const dispatch = useDispatch();
   
@@ -51,6 +55,10 @@ const App = () => {
                 <Route path="/compare" component={Comparer} />
                 <Route path="/upload" component={Uploader} />
                 <Route path="/auth" component={Auth} />
+                <Route path="/buycar" component={BuyCar} />
+                <Route path="/tradecar" component={TradeCar} />
+                <Route path="/admin" component={Admin} />
+
               </Switch>
             </div>
 

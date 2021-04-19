@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 
 import { createCar } from '../../actions/car';
 
-const CarUpload = () => {
+const CarUpload = () => { 
 
   const [ carData, setCarData] = useState({
     brand: '', model: '', version: '', fuelType: '', engineType: '', comPower: '', comMaxTorque: '', 
@@ -202,7 +202,7 @@ const CarUpload = () => {
           <input type="text" id="summmary" value={carData.summmary} onChange={(e) => setCarData({ ...carData, summmary: e.target.value })}/>
           <label htmlFor="summmary"> summmary </label>
         </div>
-        <div className="input-field"releaseDate>
+        <div className="input-field">
           <input type="date" id="releaseDate" value={carData.releaseDate} onChange={(e) => setCarData({ ...carData, releaseDate: e.target.value })}/>
           <label htmlFor="releaseDate"> releaseDate </label>
         </div>

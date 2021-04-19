@@ -76,7 +76,7 @@ const NewRelease = () => {
     );
   return (
     <div>
-      <h3 className=" container indigo lighten-3 center-align  indigo-text text-darken-4 z-depth-1"> New In </h3>
+      <h3 className=" news container indigo lighten-3 center-align  indigo-text text-darken-4 z-depth-1"> New In </h3>
       <div className="container">
         {displayCars}  
       </div>

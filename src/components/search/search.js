@@ -45,13 +45,18 @@ const Search = () => {
   }
 
   return (
-    <section className="section container">
-      <div className="input-field container">
+    <div className="container">
+    <section className="search container row">
+      <div className="input-field container col s9 m9 l9">
         <input type="text" name="search" id="search" value={q} onInput={inputEvent} onChange={searchEvent} />
         <label htmlFor="search">Search Car Model: </label>
       </div>
+      <div className="col s3 m3 l3">
+        <i className="small material-icons">search</i>
+      </div>
       <SearchResult  isOpen={isOpen} items={foundWords} />
     </section>
+    </div>
   )
 }
 

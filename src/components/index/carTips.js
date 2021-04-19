@@ -35,9 +35,9 @@ const CarTips = () => {
     })
   return (
       <section className="section grey lighten-2 row">
-        <h4 className="center-align grey darken-3 grey-text text-lighten-1">Tips</h4> 
+        <h4 className="center-align grey darken-3 grey-text text-lighten-1"> <i className="material-icons">storage</i></h4> 
 
-        <div className="container grey lighten-3 s12 l12 m12">
+        <div className="container s12 l12 m12">
         <div className=" row">
           
           { displayTips }
