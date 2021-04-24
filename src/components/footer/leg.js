@@ -3,7 +3,7 @@ import React from 'react'
 const Leg = () => {
   return (
     <div className="legs">
-      <h4 className="center align blue-grey-text text-lighten-3"> OrbitZ V1.0 </h4>
+      <h4 className="center align blue-grey-text text-lighten-3"> OrbitZ V1.0.1 </h4>
     </div>
   )
 }

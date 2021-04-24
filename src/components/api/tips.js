@@ -1,5 +1,14 @@
 import axios from 'axios';
 
-export const fetchTips = () => axios.get('http://localhost:5000/tips');
+const API = axios.create({ baseURL: 'http://localhost:5000' });
 
-export const createTip = (newTip) => axios.post('http://localhost:5000/tips/upload/post', newTip);
+API.interceptors.request.use((req) => {
+    if(localStorage.getItem('profile')) {
+        req.headers.Authorization = `Bearer ${JSON.parse(localStorage.getItem('profile')).token}`;
+    }
+
+    return req;
+});
+
+export const fetchTips = () => API.get('/tips');
+export const createTip = (newTip) => API.post('/tips/upload/post', newTip);

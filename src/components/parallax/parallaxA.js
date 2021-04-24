@@ -4,7 +4,7 @@ import mustang from '../img/mustang.jpg'
 
 const ParallaxA = () => {
   return (
-    <section className="parallax-container hide-on-large-only">
+    <section className="parallax-container">
       <div className="parallax">
         <img src={mustang} alt="parallaxA"/>
       </div>

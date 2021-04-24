@@ -57,8 +57,8 @@ const Search = ({setCurrentId}) => {
       </div>
       <div className="icons col s3 m3 l3">
         <br/>
-        <br/>
-        <i className=" material-icons indigo-text text-darken-3 waves-effect waves-light" onClick={clear}>
+        <br/> 
+        <i className=" material-icons brown-text text-darken-1 waves-effect waves-light" onClick={clear}>
           backspace
         </i>
       </div>

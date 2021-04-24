@@ -13,7 +13,7 @@ const Results = ({currentId, currentIdd}) => {
   return (
     <section className="section results row">
       <hr/>
-      <h5 className="indigo darken-2 indigo-text text-lighten-4">Technical Data </h5>
+      <h5 className="pad transparent z-depth-2 indigo-text">Technical Data </h5>
       <hr/>
 
       <table className="striped">
@@ -101,7 +101,7 @@ const Results = ({currentId, currentIdd}) => {
             </table>
 
             <hr/>
-            <h5 className="yellow lighten-3  red-text text-darken-4"> Performance <i className="material-icons black-text">traffic</i></h5>
+            <h5 className="pad transparent z-depth-2 indigo-text"> Performance <i className="material-icons black-text">traffic</i></h5>
             <hr/>
             
             <table className="striped brown-text text-darken-3">
@@ -122,7 +122,7 @@ const Results = ({currentId, currentIdd}) => {
 
 
             <hr/>
-            <h5 className=" transparant z-depth-1  indigo-text text-lighten-1"> Battery Technical Data, Charging and Range <i className="material-icons light-blue-text text-darken-4">settings_input_component</i></h5>
+            <h5 className=" pad transparent z-depth-2 indigo-text"> Battery Technical Data, Charging and Range <i className="material-icons black-text">settings_input_component</i></h5>
             <hr/>
 
             <table className="striped  brown-text text-darken-4">
@@ -173,10 +173,10 @@ const Results = ({currentId, currentIdd}) => {
 
 
             <hr/>
-            <h5 className="indigo darken-3  brown-text text-darken-4">Size Dimension Aerodynamics and Weight <i className="material-icons yellow-text text-lighten-3">select_all</i></h5>
+            <h5 className="pad transparent z-depth-2 indigo-text">Size Dimension Aerodynamics and Weight <i className="material-icons black-text">select_all</i></h5>
             <hr/>
 
-            <table className="indigo-text text-darken-4">
+            <table className="brown-text text-darken-4">
             <tbody className="striped">
             <tr>
               <td className="col s2 m2 l3"> Body </td>
@@ -294,7 +294,7 @@ const Results = ({currentId, currentIdd}) => {
             </table>
 
             <hr/>
-            <h5 className=" teal darken-4 grey-text text-lighten-4"> Others <i className="material-icons amber-text text-darken-1">power_input</i><i className="material-icons grey-text text-lighten-3">more_horiz</i> </h5>
+            <h5 className=" pad transparent z-depth-2 indigo-text"> Others <i className="material-icons black-text">power_input</i><i className="material-icons grey-text text-lighten-3">more_horiz</i> </h5>
             <hr/>
 
             <table>

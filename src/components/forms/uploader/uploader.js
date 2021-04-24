@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useHistory, Redirect} from 'react-router-dom';
 
 import TipUpload from './tips';
 import CarUpload from './cars';
 
-const Uploader = () => {
+const Uploader = ({updateId}) => {
+
+  const [ user, setUser ] = useState(JSON.parse(localStorage.getItem('profile')));
+  const history = useHistory();
+  
+  console.log(user);
+
+  useEffect(() => {
+    const token = user?.token;
+
+    setUser(JSON.parse(localStorage.getItem('profile')));
+  }, [history]);
+
+  if (!user) return <Redirect to='/auth' />
+
   return (
     <section className="container section" id="topCars">
       <ul className="tabs">
@@ -23,7 +38,7 @@ const Uploader = () => {
       </div>
 
       <div className="col s12" id="tabB">
-        <CarUpload />
+        <CarUpload updateId={updateId}/>
       </div>
     </section>
   )

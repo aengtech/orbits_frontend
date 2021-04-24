@@ -20,13 +20,13 @@ const NewRelease = () => {
     .map(car => {
       return (
         <div className=" row center-align" key={car._id}>
-          <Link to={`/cars/${car._id}`} className=" grey-text text-darken-4">
           <div className="col s12 m5 l5 container">
             <div className="hide-on-med-and-up"><br/></div>
             <div className="hide-on-med-and-up"><br/></div>
             <h4 className="indigo-text text-darken-4">{ car.brand } </h4>
             <img src={ car.selectedFileA } alt="carImg" className="responsive-img z-depth-2 materialboxed"/>
-            </div>
+          </div>
+          <Link to={`/cars/${car._id}`} className=" grey-text text-darken-4">
           <div className="details col s12 m7 l7 center-align z-depth-1  lime lighten-5">
             <div className=""><br/></div>
             <div className=""><br/></div>
@@ -76,7 +76,7 @@ const NewRelease = () => {
     );
   return (
     <div>
-      <h3 className=" container indigo lighten-3 center-align  indigo-text text-darken-4 z-depth-1"> New In </h3>
+      <h3 className=" news container indigo lighten-3 center-align  indigo-text text-darken-4 z-depth-1"> New In </h3>
       <div className="container">
         {displayCars}  
       </div>

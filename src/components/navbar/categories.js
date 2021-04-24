@@ -13,10 +13,11 @@ const Categories = () => {
 
   return (
     <>
-      <section className="section container">
+      <section className="container aside">
       <ul className="categories">
         { uniqueBrands.map((uniqueBrand) => {
-          <li key="key"> {uniqueBrand} </li>
+          return (
+            <li key={uniqueBrand}><Link to={`/brands/${uniqueBrand}`}><h6> {uniqueBrand} </h6></Link></li>)
         })}
         </ul>
       </section>

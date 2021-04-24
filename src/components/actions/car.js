@@ -19,3 +19,13 @@ export const createCar = (car) => async (dispatch) => {
       console.log(error.message);
   }
 }
+
+export const updateCar = (id, car) => async (dispatch) => {
+  try {
+    const { data } = await api.updateCar(id, car);
+
+    dispatch({ type: 'UPDATE', payload: data });
+  } catch (error) {
+    console.log(error.message);
+  }
+};

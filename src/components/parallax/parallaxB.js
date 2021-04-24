@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
+
+import carstk from '../img/carstk.jpg'
 
 const ParallaxB = () => {
   return (
-    <div className="parallax-container">
+    <section className="container">
+    <div className="parallax-container container">
       <div className="parallax">
-        <img src="#" alt="parallaxA"/>
+        <img src={carstk} alt="parallaxB" />
       </div>
     </div>
+    </section>
   )
 }
 

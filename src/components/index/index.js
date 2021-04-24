@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import Intro from './intro.js/intro';
 import Search from '../search/search';
 import ParallaxA from '../parallax/parallaxA';
-import ParallaxB from '../parallax/parallaxB';
+import ParallaxC from '../parallax/parallaxC';
 import NewRelease from './newRelease';
 import TopCars from './topCars';
 
@@ -18,20 +18,29 @@ const Index = () => {
   console.log(uniqueArray);
 
   return (
-    <section className="section">
+    <div className="home">
+
         <div className="container">
           <Search />
         </div>
+
         <Intro />
-        <ParallaxA />
+
+        <div className="hide-on-large-only">
+          <ParallaxA />
+        </div>
+
         <br/>
         
         <NewRelease />
+
         <div className="hide-on-large-only">
-          <ParallaxB />
+          <ParallaxC />
         </div>
+
         <TopCars />
-    </section>
+        
+    </div>
   )
 }
 

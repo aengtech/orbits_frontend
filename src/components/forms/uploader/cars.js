@@ -1,11 +1,13 @@
-import React, { useState }  from 'react';
+import React, { useState , useEffect}  from 'react';
 import FileBase from 'react-file-base64';
 import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
-import { createCar } from '../../actions/car';
+import { createCar, updateCar } from '../../actions/car';
 
-const CarUpload = () => {
+const CarUpload = ({updateId}) => { 
 
+  const dispatch = useDispatch();
   const [ carData, setCarData] = useState({
     brand: '', model: '', version: '', fuelType: '', engineType: '', comPower: '', comMaxTorque: '', 
     maxPower: '', maxTorque: '', numofElectricEngines: '', traction: '', numofSpeed: '', clutchType: '', 
@@ -17,15 +19,23 @@ const CarUpload = () => {
     price: '', summmary: '', releaseDate: '', 
     selectedFileA: '', selectedFileB: '', selectedFileC: '',
   });
+  const car = useSelector((state) => (updateId ? state.cars.find((c) => c._id === updateId) : null));
+  console.log(car);
+  console.log(updateId);
 
-  const dispatch = useDispatch();
+  useEffect(() => {
+    if (car) setCarData(car);
+  }, [car]);
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    dispatch(createCar(carData));
-    console.log(carData);
+    if (updateId === 0) {
+      dispatch(createCar(carData));
+    } else {
+      dispatch(updateCar(updateId, carData));
+    }
   }
   return (
     <section className="section container">
@@ -202,7 +212,7 @@ const CarUpload = () => {
           <input type="text" id="summmary" value={carData.summmary} onChange={(e) => setCarData({ ...carData, summmary: e.target.value })}/>
           <label htmlFor="summmary"> summmary </label>
         </div>
-        <div className="input-field"releaseDate>
+        <div className="input-field">
           <input type="date" id="releaseDate" value={carData.releaseDate} onChange={(e) => setCarData({ ...carData, releaseDate: e.target.value })}/>
           <label htmlFor="releaseDate"> releaseDate </label>
         </div>

@@ -3,8 +3,74 @@ body{
     padding: 0;
     background-color: #fafafa;
 }
-.tabs .indicater {
-    background-color: #1a237e;
+
+h1, h2, h3{
+    font-weight: 600; 
+}
+
+img.orbitssmall {
+    max-width: 150px;
+    position: relative;
+    top: 0px;
+}
+
+.headlogo h3 {
+    color: #b0bec5;
+    position: relative;
+    bottom: 20px;
+    left: 8px;
+    bottom: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 400%;
+    float: left;
+}
+
+.menu.blue-grey-text.text-darken-2 {
+    position: relative;
+    left: 50%;
+}
+
+div.headlogo.blue-grey{
+    overflow: hidden;
+}
+
+.headlogo.blue-grey.lighten-5 {
+    height: 111px;
+}
+
+div .comparer{
+    position: absolute;
+    top: 60px;
+    left: 16px;
+}
+
+
+.col .search{
+    position: absolute;
+    left: 25%;
+    width: 60%;
+}
+
+.card .card-content {
+    padding: 15px;
+}
+
+div.inCards {
+    border-radius: 10px;
+}
+
+
+
+li.cards {
+    background-color: #e0f2f13b;
+    border: 5px rgba(182, 242, 250, 0.438) inset;
+}
+
+
+.tabs .indicator {
+    background-color: #43444b54;
+    color: indigo;
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
@@ -13,24 +79,152 @@ body{
     border-top-right-radius: 10px;
 }
 
+.tabs{
+    width: 105%;
+}
+
 .paginationBttns { 
-    width: 80%; 
-    height: 40px; 
+    width: 100%; 
+    height: 20px; 
+    margin: 20px;
     list-style: none; 
     display: flex; 
     justify-content: center;} 
 .paginationBttns a { 
-    padding: 10px; 
-    margin: 8px; 
+    padding: 6px; 
+    margin: 6px; 
     border-radius: 5px; 
-    border: 1px solid#96a1d8; 
-    color: #232f69; cursor: pointer;} 
+    border: 1px solid#292b35; 
+    color: #383b46; 
+    cursor: pointer;} 
 .paginationBttns a:hover { 
-    color: #232f69; 
-    background-color: #6e7ab6;} 
+    color: #292b35; 
+    background-color: #b8c5f1;} 
 .paginationActive a { 
-    color: #232f69; 
-    background-color: #6f78a5de;} 
+    color: #292b35; 
+    background-color: #76777ade;} 
 .paginationDisabled a { 
-    color: rgb(36, 35, 35); 
+    color: rgb(141, 141, 141); 
     background-color: rgb(141, 141, 141);}
+
+.indigo.lighten-5 {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.parallax-container{
+    height: 300px;
+}
+
+div.third.parallax-container{
+    height: 200px;
+}
+
+div.foot{
+    height: 100px;
+}
+
+div.sided{
+    position: relative;
+    bottom: 15px;
+}
+
+div.sidedTwo{
+    position: relative;
+    top: 30px;
+}
+
+div.aside{
+    margin: -10px;
+}
+
+.aside li section{
+    display: none;
+}
+
+.preSocials{
+    height: 50px;
+}
+
+#hide p{
+    padding-top: 6px; 
+    padding-left: 5px;
+    margin-left: -4px; 
+    margin-top: 5px;
+    margin-right: -4px;
+}
+
+li.listed{
+    padding: 5px;
+    margin: 3px;
+    margin-bottom: 5px;
+    
+}
+
+img.socials {
+    width: 36px; 
+}
+
+img.buycars {
+    width: 40px;
+}
+
+ul.specialties{
+    display: inline-flex;
+    max-height: 300px;
+}
+section.tradehead {
+    position: relative;
+    bottom: 15px;
+}
+
+.profprops{
+    width: 35px;
+    margin: 5px;
+}
+
+sup {
+    font-size: larger;
+}
+
+img.brandlogos{
+    width: 100%;
+    max-height: 150px;
+}
+
+img.profile{
+    width: 100%;
+}
+
+img.orbF{
+    max-height: 250px;
+    position: relative;
+    left: -40px;
+}
+
+h5.pad {
+    padding: 7px;
+}
+
+.row .footpng.col.s6 {
+    max-height: 150px;
+}
+
+.profile.col.l5.m5 {
+    max-height: 300px;
+    background: rgb(91,91,91);
+    background: linear-gradient(70deg, rgba(91,91,91,0.9637758062126931) 0%, rgba(112,112,112,1) 44%, rgba(25,25,25,0.9469218736284235) 100%);
+}
+
+.profdets.col.grey.row{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(112,112,112,1) 44%, rgba(25,25,25,1) 100%);
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus-not([readonly]){
+    border-color: grey;
+    box-shadow: none;
+}
